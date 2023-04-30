@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer and StopWatcher</title>
+    <link rel="icon" href="E:\time and StopWatch\images\2471.jpg">
+    <link rel="stylesheet" href="Time_StopWatcher_Style.css">
+</head>
+<body>
+    <div>
+        <nav class="main"> <p class="title">Timer and StopWatcher</p></nav>
+      </div>
+      <div class="unit">    
+        <button class="tablink" onclick="openPage('watch1',this,'#fd19b8')">Stop Watcher</button>
+        <button class="tablink" onclick="openPage('timer1',this,'#fd19b8')">Timer</button>
+    </div>
+    <div id="watch1" class="watcher" >
+        <div class="stoper">
+            00:00:00
+        </div>
+        <div class="control1">
+            <button id="start" class="btn1">Start</button>
+            <button id="stop" class="btn1">Stop</button>
+            <button id="reset" class="btn1">Reset</button>
+        </div>
+    </div>
+    <div id="timer1" class="watcher">
+        <div id="timer" onclick="toggleControls()"></div>
+        <div id="control" class="control1">
+            <button onclick="setTimer()" class="btn1">Set timer</button>
+            <button onclick="resetTimer()" class="btn1">Reset</button>
+        </div>
+    </div>
+    <script src="Time_StopWatcher_Script.js">
+    </script>
+</body>
+</html>

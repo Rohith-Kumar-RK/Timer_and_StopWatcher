@@ -1,0 +1,117 @@
+:root{
+    --primary:rgb(249, 181, 98);
+    --dark:#9dcbff;
+    --light:#f3f4f6;
+    --darkdark:#6d9cff;
+
+}
+.{
+    box-sizing: border-box;
+    margin:0;
+    font-family: 'fira sans', sans-serif;
+}
+body{
+    background: var(--dark);
+    color:var(--light);
+
+}
+.title {
+    font-style: oblique;
+    font-size: 40px;
+    color: rgb(247, 251, 3);
+    text-align: center;
+    padding-left: 540px;
+    cursor: pointer;
+}
+.unit{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 350px;
+}
+.unit .tablink{
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    color:var(--light);
+    font-size: 1.125rem;
+    background-color: var(--primary);
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: 0.1s;
+    touch-action: auto;
+    
+  }
+  
+.main{
+  background-color:#B91372;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 5px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  
+}
+  a{
+    text-decoration: none;
+    display: inline-block;
+  }
+.watch{
+    text-align: center;
+    /*background-color:var(--darkdark) ;*/
+    width: 100%;
+    max-width: 360px
+    margin:4rem auto;
+    padding-bottom: 20px;
+   // padding-top:130px;
+    border-radius:1rem;
+    
+}
+.stoper{
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    padding-left: 590px;
+}
+.control1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.control1 .btn1{
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    color:var(--light);
+    font-size: 1.125rem;
+    background-color: var(--primary);
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: 0.01s;
+}
+button:hover{
+    opacity: 0.7;
+}
+button:active{
+    background-color: var(--dark);
+}
+#timer{
+    padding-left: 650px;
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+#timer1{
+    display: none;
+}
+
